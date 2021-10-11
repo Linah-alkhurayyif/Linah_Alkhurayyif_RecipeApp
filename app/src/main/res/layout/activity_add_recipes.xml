@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bbg"
+    tools:context=".AddRecipes">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:cardCornerRadius="12dp"
+        android:background="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:fontFamily="@font/indieflower_regular"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:textSize="25dp"
+                android:text="~ Enter your recipe ~" />
+
+            <EditText
+                android:id="@+id/title_et"
+                android:layout_width="325dp"
+                android:layout_height="50dp"
+                android:paddingStart="8dp"
+                android:layout_margin="15dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:background="@drawable/costume_edit_text"
+                android:hint="Enter Title"
+                android:textColorHint="#9E5B27"/>
+
+            <EditText
+                android:id="@+id/author_et"
+                android:layout_width="325dp"
+                android:layout_height="50dp"
+                android:paddingStart="8dp"
+                android:layout_marginBottom="15dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:background="@drawable/costume_edit_text"
+                android:hint="Enter Author Name"
+                android:textColorHint="#9E5B27" />
+
+            <EditText
+                android:id="@+id/ingredients_et"
+                android:layout_width="325dp"
+                android:layout_height="50dp"
+                android:paddingStart="8dp"
+                android:layout_marginBottom="15dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:background="@drawable/costume_edit_text"
+                android:hint="Enter Ingredients"
+                android:textColorHint="#9E5B27" />
+
+            <EditText
+                android:id="@+id/instructions_et"
+                android:layout_width="325dp"
+                android:layout_height="50dp"
+                android:paddingStart="8dp"
+                android:layout_marginBottom="15dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:background="@drawable/costume_edit_text"
+                android:hint="Enter Instructions"
+                android:textColorHint="#9E5B27"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/Viewbtn"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="10dp"
+                    android:backgroundTint="#F4998A"
+                    android:text="View" />
+
+                <Button
+                    android:id="@+id/Savebtn"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:backgroundTint="#ED443C"
+                    android:text="Save" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
